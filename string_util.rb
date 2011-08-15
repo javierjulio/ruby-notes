@@ -1,22 +1,34 @@
 
-
 def repeat(str, count)
-    
-    result = ''
-    
-    #0.upto(count) do
-    #    result = result + str
-    #end
-    
-    count.downto 0 do
-        result = result + str
-    end
-    
-    result
-    
+  
+  result = ''
+  
+  
+  # Approach 1
+  
+  #0.upto(count) do
+  #  result = result + str
+  #end
+  
+  
+  # Approach 2
+  
+  #count.downto 0 do
+  #  result = result + str
+  #end
+  
+  
+  # Approach 3
+  
+  #count.times { result += str }
+  
+  #result
+  
+  
+  # Approach 4 (awesomeness!)
+  
+  str * count
+  
 end
 
 puts(repeat 'test', 5)
-
-5.times { puts "Mice!\n" } # more on blocks later  
-"Elephants Like Peanuts".length 
